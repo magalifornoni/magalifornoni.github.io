@@ -1,0 +1,170 @@
+header, section, footer {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	height: 80px;
+	background-color: #727272;
+	margin-bottom: 10px;
+}
+
+#marca {
+	width: 100px;
+	height: 80px;
+	background-color: #5c5c5c;
+	float: left;
+}
+
+#botonera {
+	width: 650px;
+	height: 80px;
+	background-color: #494848;
+	float: right;
+}
+
+#inicio {
+	height: 400px;
+	background-color: #da4156;
+}
+
+#img_inicio {
+	width: 300px;
+	height: 350px;
+	background-color: #b02538;
+	float: right;
+	margin-top: 20px;
+}
+
+#txt_inicio {
+	width: 600px;
+	height: 350px;
+	background-color: #ed5e72;
+	float: left;
+	margin-top: 20px;
+}
+
+#foster {
+	height: 400px;
+	background-color: #a7c068;
+}
+
+#txt_foster {
+	width: 800px;
+	height: 180px;
+	background-color: #b4cb79;
+	float: right;
+	margin-right: 80px;
+	margin-top: 20px;
+}
+
+#img_foster {
+	width: 160px;
+	height: 160px;
+	background-color: #6d8926;
+	float: left;
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#adopt {
+	height: 400px;
+	background-color: #68a2c0;
+}
+
+#txt_adopt {
+	width: 800px;
+	height: 180px;
+	background-color: #a7c3d1;
+	float: right;
+	margin-right: 80px;
+	margin-top: 20px;
+}
+
+#img_adopt {
+	width: 160px;
+	height: 160px;
+	background-color: #487b95;
+	float: left;
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#findahome {
+	height: 400px;
+	background-color: #816cc5;
+}
+
+#txt_findahome {
+	width: 800px;
+	height: 180px;
+	background-color: #937ed4;
+	float: right;
+	margin-right: 80px;
+	margin-top: 20px;
+}
+
+#img_findahome {
+	width: 960px;
+	height: 160px;
+	background-color: #6754a4;
+	float: left;
+	margin-top: 20px;
+}
+
+#events {
+	height: 400px;
+	background-color: #cb7c51;
+}
+
+#img_events {
+	width: 600px;
+	height: 350px;
+	background-color: #e49367;
+	float: right;
+	margin-top: 20px;
+}
+
+#txt_events {
+	width: 300px;
+	height: 350px;
+	background-color: #be6e43;
+	float: left;
+	margin-top: 20px;
+}
+
+footer {
+	height: 180px;
+	background-color: #727272;
+	margin-top: 10px;
+}
+
+#txt_footer {
+	width: 360px;
+	height: 60px;
+	background-color: #3b3b3b;
+	float: left;
+	margin-top: 20px;
+	margin-left: 300px
+}
+
+#botonera_footer {
+	width: 360px;
+	height: 30px;
+	background-color: #494848;
+	float: left;
+	margin-top: 10px;
+	margin-left: 300px
+}
+
+#mail {
+	width: 360px;
+	height: 30px;
+	background-color: #5f5f5f;
+	float: left;
+	margin-top: 10px;
+	margin-left: 300px
+}
