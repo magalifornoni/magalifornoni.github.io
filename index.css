@@ -111,7 +111,6 @@ p {
 #txt_foster {
 	width: 800px;
 	height: 200px;
-	background-color: #;
 	float: right;
 	margin-right: 80px;
 	margin-top: 20px;
@@ -120,7 +119,6 @@ p {
 .img_foster {
 	width: 180px;
 	height: 180px;
-	background-color: #;
 	float: left;
 	margin-top: 40px;
 	margin-left: 70px;
@@ -149,7 +147,6 @@ p {
 #txt_adopt {
 	width: 800px;
 	height: 180px;
-	background-color: #;
 	float: right;
 	margin-right: 80px;
 	margin-top: 20px;
@@ -188,7 +185,6 @@ p {
 #txt_findahome {
 	width: 800px;
 	height: 180px;
-	background-color: #;
 	float: right;
 	margin-right: 80px;
 	margin-top: 20px;
@@ -207,7 +203,6 @@ p {
 #banner_findahome {
 	width: 500px;
 	height: 200px;
-	background-color: #;
 	float: right;
 	padding: 30px;
 	box-sizing: border-box;
@@ -230,7 +225,6 @@ p {
 	width: 400px;
 	height: 350px;
 	float: right;
-	background-color: #;
 	margin-top: 20px;
 	margin-right: 100px;
 	padding: 50px;
@@ -289,7 +283,6 @@ footer {
 #txt_footer {
 	width: 280px;
 	height: 60px;
-	background-color: #;
 	float: left;
 	margin-top: 20px;
 	margin-left: 330px
@@ -306,7 +299,6 @@ footer {
 #botonera_footer {
 	width: 280px;
 	height: 30px;
-	background-color: #;
 	float: left;
 	margin-top: 10px;
 	margin-left: 330px
@@ -336,7 +328,6 @@ footer {
 #mail {
 	width: 280px;
 	height: 30px;
-	background-color: #;
 	float: left;
 	margin-top: 10px;
 	margin-left: 330px
