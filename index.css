@@ -1,3 +1,7 @@
+body {
+	font-family: Century Gothic;
+}
+
 header, section, footer {
 	width: 960px;
 	margin-right: auto;
@@ -6,165 +10,340 @@ header, section, footer {
 
 header {
 	height: 80px;
-	background-color: #727272;
+	background-color: #ffffff;
 	margin-bottom: 10px;
 }
 
+h1 {
+	font-family: Rock Salt;
+	font-size: 45px;
+	text-align: center;
+	color: #da4156;
+	line-height: 1.5;
+}
+
+h2 {
+	text-align: center;
+	color: #da4156;
+	font-size: 30px;
+}
+
+p {
+	text-align: center;
+	color: #5d5c5c;
+}
+
 #marca {
-	width: 100px;
+	width: 80px;
 	height: 80px;
-	background-color: #5c5c5c;
 	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#marca img {
+	height: 100%
 }
 
 #botonera {
-	width: 650px;
+	width: 550px;
 	height: 80px;
-	background-color: #494848;
+	margin-right: 150px;
 	float: right;
 }
 
-#inicio {
+#botonera ul {
+	margin: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+#botonera ul li {
+	display: inline;
+}
+
+#botonera ul li a {
+	text-decoration: none;
+	color: #5d5c5c;
+	font-weight: bold;
+	padding: 10px 10px;
+	display: inline-block;
+}
+
+#botonera ul li a:hover {
+	color: #da4156;
+	border-radius: 15px;
+	border: 2px solid #da4156;
+	margin: -2px;
+}
+
+#home {
 	height: 400px;
-	background-color: #da4156;
+	background-color: #ffffff;
 }
 
-#img_inicio {
-	width: 300px;
-	height: 350px;
-	background-color: #b02538;
+#img_home {
+	width: 340px;
+	height: 400px;
+	background-color: #ffffff;
 	float: right;
-	margin-top: 20px;
 }
 
-#txt_inicio {
-	width: 600px;
+#img_home img {
+	height: 100%;
+}
+
+#txt_home {
+	width: 550px;
 	height: 350px;
-	background-color: #ed5e72;
+	background-color: #ffffff;
 	float: left;
 	margin-top: 20px;
+	padding: 20px 80px;
+	box-sizing: border-box;
 }
 
 #foster {
-	height: 400px;
-	background-color: #a7c068;
+	height: 500px;
+	background-color: #e7e7e7;
 }
 
 #txt_foster {
 	width: 800px;
-	height: 180px;
-	background-color: #b4cb79;
+	height: 200px;
+	background-color: #;
 	float: right;
 	margin-right: 80px;
 	margin-top: 20px;
 }
 
-#img_foster {
-	width: 160px;
-	height: 160px;
-	background-color: #6d8926;
+.img_foster {
+	width: 180px;
+	height: 180px;
+	background-color: #;
 	float: left;
-	margin-top: 20px;
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-top: 40px;
+	margin-left: 70px;
+	margin-right: 70px;
+	border-radius: 90px;
+}
+
+.img_foster img {
+	height: 80%;
+	border-radius: inherit;
+	margin: auto;
+	display: block;
+	margin-top: 16px;
+}
+
+.img_foster img:hover {
+	height: 100%;
+	margin-top: 0px;
 }
 
 #adopt {
-	height: 400px;
-	background-color: #68a2c0;
+	height: 500px;
+	background-color: #f2f2f3;
 }
 
 #txt_adopt {
 	width: 800px;
 	height: 180px;
-	background-color: #a7c3d1;
+	background-color: #;
 	float: right;
 	margin-right: 80px;
 	margin-top: 20px;
 }
 
-#img_adopt {
-	width: 160px;
-	height: 160px;
-	background-color: #487b95;
+.img_adopt {
+	width: 156px;
+	height: 195px;
+	background-color: #ffffff;
 	float: left;
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-left: 80px;
 	margin-right: 80px;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+.img_adopt img {
+	width: 100%;
+	border-radius: inherit;
+}
+
+.img_adopt:hover {
+	border-color: #da4156;
+}
+
+.img_adopt img:hover {
+	opacity: 50%;
 }
 
 #findahome {
-	height: 400px;
-	background-color: #816cc5;
+	height: 430px;
+	background-color: #e7e7e7;
 }
 
 #txt_findahome {
 	width: 800px;
 	height: 180px;
-	background-color: #937ed4;
+	background-color: #;
 	float: right;
 	margin-right: 80px;
 	margin-top: 20px;
 }
 
 #img_findahome {
-	width: 960px;
-	height: 160px;
-	background-color: #6754a4;
-	float: left;
-	margin-top: 20px;
+	width: 800px;
+	height: 200px;
+	background-image: url(imagenes/paw_palm.jpg);
+	float: right;
+	margin-top: 10px;
+	margin-right: 80px;
+	border-radius: 30px;
+}
+
+#banner_findahome {
+	width: 500px;
+	height: 200px;
+	background-color: #;
+	float: right;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+#img_findahome p {
+	font-family: Rock Salt;
+	font-size: 25px;
+	text-align: center;
+	color: #da4156;
+	line-height: 1.5;
 }
 
 #events {
 	height: 400px;
-	background-color: #cb7c51;
-}
-
-#img_events {
-	width: 600px;
-	height: 350px;
-	background-color: #e49367;
-	float: right;
-	margin-top: 20px;
+	background-color: #fccb4b;
 }
 
 #txt_events {
-	width: 300px;
+	width: 400px;
 	height: 350px;
-	background-color: #be6e43;
-	float: left;
+	float: right;
+	background-color: #;
 	margin-top: 20px;
+	margin-right: 100px;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+#the {
+	font-size: 20px;
+	text-align: left;
+	color: #ffffff;
+	line-height: 1;
+}
+
+#purrfect {
+	font-size: 70px;
+	text-align: left;
+	color: #ffffff;
+	line-height: 1;
+}
+
+#match {
+	font-size: 93px;
+	text-align: left;
+	color: #ffffff;
+	line-height: 1;
+}
+
+#adoption_event {
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 1;
+}
+
+#date {
+	font-size: 20px;
+	text-align: center;
+	color: #000000;
+	line-height: 7;
+}
+
+#img_events {
+	width: 280px;
+	height: 400px;
+	background-image: url(imagenes/img_events.jpg);
+	background-size: cover;
+	float: left;
 }
 
 footer {
 	height: 180px;
-	background-color: #727272;
+	background-color: #da4156;
 	margin-top: 10px;
 }
 
 #txt_footer {
-	width: 360px;
+	width: 280px;
 	height: 60px;
-	background-color: #3b3b3b;
+	background-color: #;
 	float: left;
 	margin-top: 20px;
-	margin-left: 300px
+	margin-left: 330px
+}
+
+#txt_footer p {
+	font-family: Rock Salt;
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 1;
 }
 
 #botonera_footer {
-	width: 360px;
+	width: 280px;
 	height: 30px;
-	background-color: #494848;
+	background-color: #;
 	float: left;
 	margin-top: 10px;
-	margin-left: 300px
+	margin-left: 330px
+}
+
+#botonera_footer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#botonera_footer ul li {
+	display: inline;
+}
+
+.icon {
+	height: 30px;
+	display: inline-block;
+	filter: invert(100%);
+	padding: 0px 30px;
+}
+
+.icon:hover {
+	filter: invert(0%);
 }
 
 #mail {
-	width: 360px;
+	width: 280px;
 	height: 30px;
-	background-color: #5f5f5f;
+	background-color: #;
 	float: left;
 	margin-top: 10px;
-	margin-left: 300px
+	margin-left: 330px
+}
+
+#mail p {
+	text-align: center;
+	color: #ffffff;
+	line-height: 0;
 }
