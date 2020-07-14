@@ -6,7 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
+  <script type="text/javascript">
+    var name = prompt('Whats your name?')
+    var age = prompt('Whats your age?')
+    var adoption = prompt('Are you interested in adopting a pet?')
+    var pet = prompt('What kind of pet are you interested in?')
+    var owner = prompt('Have you ever own a pet?')
+
+  </script>
 </head>
+
 <body> 
   	<header>
   		<div id="marca">
@@ -15,67 +24,112 @@
   		<nav id="botonera">
         <ul>
           <li><a href="#home">HOME</a></li>
-          <li><a href="#foster">FOSTER</a></li>
-          <li><a href="#adopt">ADOPT</a></li>
-          <li><a href="#findahome">FIND A HOME</a></li>
+          <li><a href="#adoption">ADOPTION</a></li>
           <li><a href="#events">EVENTS</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>  
       </nav>
   	</header>
 
   	<section id="home">
   		<div id="img_home">
-        <img src="imagenes/img_home.jpg">  
+        <img src="imagenes/img_home.jpg"> 
       </div>
   		<div id="txt_home">
         <h1>You can’t buy love but you can rescue it.</h1>  
       </div>
-  	</section>
-  		
-  	<section id="foster">
-  		<article id="txt_foster">
-        <h2>FOSTER</h2>
-        <p>Foster Homes are essential to rescue those animals in need.<br/>If you can provide a loving and safe house for a while, please consider becoming a pet foster. </p> 
-        <p>With our platform you can become part of a network of Foster Homes, giving shelter to a pet while they find a Forever Home.</p>
-      </article>
-  		<div class="img_foster">
-        <img src="imagenes/img_foster1.jpg">
-      </div>
-      <div class="img_foster">
-        <img src="imagenes/img_foster2.jpg">
-      </div>
-      <div class="img_foster">
-        <img src="imagenes/img_foster3.jpg">
-      </div>
-  	</section>
-  	
-  	<section id="adopt">
-  		<article id="txt_adopt">
-        <h2>ADOPT</h2>
-        <p>Find shelters or fosters homes near you.<br/>See all those furry friends waiting for a Forever Home.</p>  
-      </article>
-  		<div class="img_adopt">
-        <img src="imagenes/img_adopt1.jpg">  
-      </div>
-  		<div class="img_adopt">
-        <img src="imagenes/img_adopt2.jpg">  
-      </div>
-  		<div class="img_adopt">
-        <img src="imagenes/img_adopt3.jpg">  
-      </div>
-  	</section>
-  	
-  	<section id="findahome">
-  		<article id="txt_findahome">
-        <h2>FIND A HOME</h2>
-        <p>To give away your pet, no matter how long or brief you been with them, it's not an easy decision, but if you must relinquish your pet make sure they go to a loving and caring Home.</p>
-      </article>
-  		<div id="img_findahome">
-        <article id="banner_findahome">
-          <p>If you found a stray help them find a Forever Home.</p>
-        </article>
+      <div>
+        <h2>HAVE A DATE!!</h2>
+        <div class="datethem">
+          <h3>EAT</h3>
+          <div class="img_datethem">
+            <img src="imagenes/eat.jpg">
+          </div>
+          <p>Come enjoy our food.</p>
+        </div>
+        <div class="datethem">
+          <h3>MEET</h3>
+          <div class="img_datethem">
+            <img src="imagenes/meet.jpg">
+          </div>
+          <p>Have a fun moment geting to know all of the present pets.</p>
+        </div>
+        <div class="datethem">
+          <h3>ADOPT</h3>
+          <div class="img_datethem">
+            <img src="imagenes/adopt.jpg">
+          </div>
+          <p>Our staff will guide you over the adoption process.</p>
         </div>
       </div>
+  	</section>
+  	
+    <section id="prompt">
+      <h2>Welcome 
+        <script type="text/javascript">
+          document.write(name)
+        </script>
+      </h2>
+      <div id="promt_container">
+        <h4>Your age:
+          <script type="text/javascript">
+            document.write(age)
+          </script>
+        </h4>
+
+        <h4>Interest in adopting:
+          <script type="text/javascript">
+            document.write(adoption)
+          </script>
+        </h4>
+
+        <h4>Wants to adopt a:
+          <script type="text/javascript">
+            document.write(pet)
+          </script>
+        </h4>
+
+        <h4>Did you have a pet before:
+          <script type="text/javascript">
+            document.write(owner)
+          </script>
+        </h4>
+      </div>      
+    </section>
+
+  	<section id="adoption">
+  		<article class="txt_adoption">
+        <h2>ADOPTION</h2>
+        <p>With the links below you can search all the pets registered with us who are waiting for a Forever Home.</p>
+      </article>
+  		<div class="img_adoption">
+        <div class="container">
+          <div class="overlay">
+            <p>CATS</p>
+          </div>
+          <img src="imagenes/img_foster1.jpg">
+        </div>
+      </div>
+      <div class="img_adoption">
+        <div class="container">
+          <div class="overlay">
+            <p>DOGS</p>
+          </div>
+          <img src="imagenes/img_foster2.jpg">
+        </div>
+      </div>
+      <div class="img_adoption">
+        <div class="container">
+          <div class="overlay">
+            <p>EXOTICS</p>
+          </div>
+          <img src="imagenes/img_foster3.jpg">
+        </div>
+      </div>
+      <article class="txt_adoption">
+        <p>Foster Homes are essential to rescue those animals in need.<br/>If you can provide a loving and safe house for a while, please consider becoming a pet foster.<br/><a href="join">JOIN</a> our group!</p>
+      </article>
    	</section>
   	
   	<section id="events">
@@ -87,8 +141,55 @@
         <div id="adoption_event">ADOPTION EVENT</div>
         <div id="date">SUNDAY 21/06/2020</div>
       </article>
+      <article id="txt_calendar">SEE ALL PROGRAMED EVENTS <a href="calendar">HERE</a></article>
   	</section>
   	
+    <section id="menu">
+      <article id="txt_menu">
+        <h2>MENU</h2>
+        <p>We have a variety of food to "bark for". Enjoy pastries, soups, salads and more in a setting dedicated to the welfare fo pets.</p>
+      </article>
+      <div>
+        <div class="menu">
+          <h3>CAFFE</h3>
+          <p>Hand crafted by our talented PURRistas, be sure to ask for yours with a paw print for that special touch.<br/>Check out our seasonal specials, and find your perfect blend!</p>
+        </div>
+        <div class="menu">
+          <h3>TEA</h3>
+          <p>We have delicious locally hand blended teas and a variety of fan favorites such as Chai, Peppermint, Sencha Green, Canadian Breakfast, & Earl Grey.</p>
+        </div>
+        <div class="menu">
+          <h3>PASTRIES</h3>
+          <p>Try our scrumptious fresh baked treats. Locally baked with love and care, these treats are sure to delight! <br/>Selection including: Cupcakes, Muffins & Cookie Sandwiches.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <article id="txt_contact">
+        <h2>CONTACT US</h2>
+        <p>Leave us your contact information and your comments or questions.</p>
+      </article>
+      <form id="formulario" method="POST" action="#">
+        <div id="contact_container">
+
+          <label for="fname">First Name</label>
+          <input type="text" name="firstname">
+
+          <label for="lname">Last Name</label>
+          <input type="text" name="lastname">
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" rows="6"></textarea>
+
+          <input type="submit" value="Submit">
+        </div> 
+      </form>
+    </section>
+
   	<footer>
   		<div id="txt_footer">
         <p>SHARE US!!</p>  
