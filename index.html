@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
   <script type="text/javascript">
-    var name = prompt('Whats your name?')
-    var age = prompt('Whats your age?')
-    var adoption = prompt('Are you interested in adopting a pet?')
-    var pet = prompt('What kind of pet are you interested in?')
-    var owner = prompt('Have you ever own a pet?')
+    //var name = prompt('Whats your name?')
+    //var age = prompt('Whats your age?')
+    //var adoption = prompt('Are you interested in adopting a pet?')
+    //var pet = prompt('What kind of pet are you interested in?')
+    //var owner = prompt('Have you ever own a pet?')
 
   </script>
 </head>
@@ -68,31 +68,31 @@
     <section id="prompt">
       <h2>Welcome 
         <script type="text/javascript">
-          document.write(name)
+          //document.write(name)
         </script>
       </h2>
       <div id="promt_container">
         <h4>Your age:
           <script type="text/javascript">
-            document.write(age)
+            //document.write(age)
           </script>
         </h4>
 
         <h4>Interest in adopting:
           <script type="text/javascript">
-            document.write(adoption)
+            //document.write(adoption)
           </script>
         </h4>
 
         <h4>Wants to adopt a:
           <script type="text/javascript">
-            document.write(pet)
+            //document.write(pet)
           </script>
         </h4>
 
         <h4>Did you have a pet before:
           <script type="text/javascript">
-            document.write(owner)
+            //document.write(owner)
           </script>
         </h4>
       </div>      
@@ -149,20 +149,25 @@
         <h2>MENU</h2>
         <p>We have a variety of food to "bark for". Enjoy pastries, soups, salads and more in a setting dedicated to the welfare fo pets.</p>
       </article>
-      <div>
-        <div class="menu">
-          <h3>CAFFE</h3>
-          <p>Hand crafted by our talented PURRistas, be sure to ask for yours with a paw print for that special touch.<br/>Check out our seasonal specials, and find your perfect blend!</p>
-        </div>
-        <div class="menu">
-          <h3>TEA</h3>
-          <p>We have delicious locally hand blended teas and a variety of fan favorites such as Chai, Peppermint, Sencha Green, Canadian Breakfast, & Earl Grey.</p>
-        </div>
-        <div class="menu">
-          <h3>PASTRIES</h3>
-          <p>Try our scrumptious fresh baked treats. Locally baked with love and care, these treats are sure to delight! <br/>Selection including: Cupcakes, Muffins & Cookie Sandwiches.</p>
-        </div>
+
+      <nav id="botonera_menu">
+          <div><a href="#menu" onclick="mostrar('cafe_menu'), ocultar('tea_menu'), ocultar('pastries_menu')">CAFE</a></div>
+          <div><a href="#menu" onclick="mostrar('tea_menu'), ocultar('cafe_menu'), ocultar('pastries_menu')">TEA</a></div>
+          <div><a href="#menu" onclick="mostrar('pastries_menu'), ocultar('cafe_menu'), ocultar('tea_menu')">PASTRIES</a></div>
+      </nav> 
+
+      <div class="info_menu" id="cafe_menu" style="display: none;">
+        <div><img src="imagenes/cafe.jpg"></div>
+        <p>Hand crafted by our talented PURRistas, be sure to ask for yours with a paw print for that special touch.<br/>Check out our seasonal specials, and find your perfect blend!</p>
       </div>
+      <div class="info_menu" id="tea_menu" style="display: none;">
+         <div><img src="imagenes/tea.jpg"></div> 
+        <p>We have delicious locally hand blended teas and a variety of fan favorites such as Chai, Peppermint, Sencha Green, Canadian Breakfast, & Earl Grey.</p>
+      </div>
+       <div class="info_menu" id="pastries_menu" style="display: none;">
+        <div><img src="imagenes/pastries.jpg"></div> 
+        <p>Try our scrumptious fresh baked treats. Locally baked with love and care, these treats are sure to delight! <br/>Selection including: Cupcakes, Muffins & Cookie Sandwiches.</p>
+       </div>
     </section>
 
     <section id="contact">
@@ -170,7 +175,7 @@
         <h2>CONTACT US</h2>
         <p>Leave us your contact information and your comments or questions.</p>
       </article>
-      <form id="formulario" method="POST" action="#">
+      <form id="formulario" action="javascript:submit()">
         <div id="contact_container">
 
           <label for="fname">First Name</label>
@@ -180,7 +185,7 @@
           <input type="text" name="lastname">
 
           <label for="email">E-mail</label>
-          <input type="email" name="email">
+          <input type="email" name="email" id="get_email">
 
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" rows="6"></textarea>
@@ -205,5 +210,6 @@
         <p>sheltered@gmail.com</p>  
       </div>
   	</footer>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
