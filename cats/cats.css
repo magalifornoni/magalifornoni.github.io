@@ -1,0 +1,12 @@
+h1 {
+	color: #da4156;
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+} /* fin media 600px a 1023px */
+
+
+@media all and (max-width: 599px) {
+
+} /* fin media -599px */
