@@ -1,12 +1,66 @@
-h1 {
-	color: #da4156;
+#contenedor {
+	background-color: #f5f5f5;
 }
 
-@media all and (min-width: 600px) and (max-width: 1023px) {
+#header {
+	background-color: #d693f5;
+	height: 80px;
+}
 
-} /* fin media 600px a 1023px */
+#marca {
+	background-color: #bc8cdb;
+}
 
+#botonera {
+	background-color: #6b4682;
+}
 
-@media all and (max-width: 599px) {
+#cats_adoption {
+	background-color: #c4f395;
+	height: 600px;
+}
 
-} /* fin media -599px */
+#cont1 {
+	background-color: #b0c79b;
+}
+
+#cont2 {
+	background-color: #859c70;
+}
+
+#cont3 {
+	background-color: #adcc91;
+}
+
+#cont4 {
+	background-color: #97b37f;
+}
+
+#cont5 {
+	background-color: #7b9167;
+}
+
+#cont6 {
+	background-color: #97c270;
+}
+
+#cont7 {
+	background-color: #85a865;
+}
+
+#footer {
+	background-color: #ebce98;
+	height: 180px;
+}
+
+#footer1 {
+	background-color: #ebb5d3;
+}
+
+#footer2 {
+	background-color: #cc9db7;
+}
+
+#footer3 {
+	background-color: #b0809b;
+}
