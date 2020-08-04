@@ -17,50 +17,89 @@
 
 #cats_adoption {
 	background-color: #c4f395;
-	height: 600px;
 }
 
 #cont1 {
-	background-color: #b0c79b;
+	background-color: #ffffff;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+#cont1 p {
+	text-align: center;
 }
 
 #cont2 {
-	background-color: #859c70;
+	background-color: #ffffff;
+}
+
+.adopt-btn {
+	background-color: #da4156;
+	color: #ffffff;
 }
 
 #cont3 {
-	background-color: #adcc91;
+	background-color: #ffffff;
+	padding-top: 10px;
+	box-sizing: border-box;
 }
 
-#cont4 {
-	background-color: #97b37f;
+#cont3 p {
+	color: #da4156;
 }
 
-#cont5 {
-	background-color: #7b9167;
+input {
+	margin-bottom: 10px;
 }
 
-#cont6 {
-	background-color: #97c270;
+.submit-btn {
+	background-color: #4caf50;
+	color: #ffffff;
 }
 
-#cont7 {
-	background-color: #85a865;
+.submit-btn:hover {
+	background-color: #45a049;
+	color: #ffffff;
 }
 
 #footer {
-	background-color: #ebce98;
+	background-color: #da4156;
 	height: 180px;
 }
 
-#footer1 {
-	background-color: #ebb5d3;
+#footer1 p {
+	font-family: Rock Salt;
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 
-#footer2 {
-	background-color: #cc9db7;
+#footer2 ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
 }
 
-#footer3 {
-	background-color: #b0809b;
+#footer2 ul li {
+	display: inline;
+	padding-left: 10px;
+}
+
+.icon {
+	height: 30px;
+	display: inline-block;
+	filter: invert(100%);
+}
+
+.icon:hover {
+	filter: invert(0%);
+}
+
+#footer3 p {
+	text-align: center;
+	color: #ffffff;
+	line-height: 0;
 }
