@@ -12,12 +12,66 @@
 <body>
 	<div class="container" id="contenedor">
 		<header class="row" id="header">
-			<div class="col-md-2" id="marca"></div>
-			<div class="col-md-8 offset-md-2" id="botonera"></div>
+			<div class="col-md-2" id="marca">
+				<img src="../imagenes/marca.png" class="img-fluid">
+			</div>
+			<div class="col-md-9 offset-md-1" id="botonera">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+				  <button class="navbar-toggler navbar-custom" type="button" data-toggle="collapse" data-target="#menuprincipal" >
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="menuprincipal"> 
+				    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">HOME <span class="sr-only"></span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">ADOPTION</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">EVENTS</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">MENU</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">CONTACT</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+			</div>
 		</header>
 		<section class="row" id="cats_adoption">
+			<div class="carousel slide" id="mygalery" data-ride="carousel" data-interval="10000">
+				<ol class="carousel-indicators">
+					<li data-target="#mygalery" data-slide-to="0" class="active"></li>
+					<li data-target="#mygalery" data-slide-to="1"></li>
+					<li data-target="#mygalery" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="../imagenes/cats.jpg" class="img-fluid">
+						<div class="carousel-caption">
+							<h3>CAT ADOPTIONS</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="../imagenes/datecat.jpg" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="../imagenes/cat2.jpg" class="img-fluid">
+					</div>
+				</div>
+				<a href="#mygalery" data-slide="prev" class="carousel-control-prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a href="#mygalery" data-slide="next" class="carousel-control-next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
 			<div class="col-12" id="cont1">
-				<p>Want to adopt one of the kitties? Just click en the "adopt" button to let us know which kitty you have fallen in love with, then complete the contact form. An adoption specialist will aim to contact you within one business day.</p>
+				<p><b>Want to adopt one of the kitties?</b><br> Just click en the "adopt" button to let us know which kitty you have fallen in love with, then complete the contact form. An adoption specialist will aim to contact you within one business day.</p>
 			</div>
 			<div class="col-12" id="cont2">
 				<div class="row">
@@ -27,7 +81,7 @@
 				      <div class="card-body">
 				        <h5 class="card-title">Barley</h5>
 				        <p class="card-text">3 Years Old<br> Male<br> <b>Very shy and timid.</b></p>
-				        <a href="#" class="btn adopt-btn">Adopt</a>
+				        <a href="#" class="btn adopt-btn" data-toggle="modal" data-target="#adopt-modal">Adopt</a>
 				      </div>
 				    </div>
 				  </div>
@@ -37,7 +91,7 @@
 				      <div class="card-body">
 				        <h5 class="card-title">Maisel</h5>
 				        <p class="card-text">5 Years Old<br> Male<br> <b>Calm and cuddly.</b></p>
-				        <a href="#" class="btn adopt-btn">Adopt</a>
+				        <a href="#" class="btn adopt-btn" data-toggle="modal" data-target="#adopt-modal">Adopt</a>
 				      </div>
 				    </div>
 				  </div>
@@ -47,28 +101,42 @@
 				      <div class="card-body">
 				        <h5 class="card-title">Mittens</h5>
 				        <p class="card-text">2 Years Old<br> Female<br> <b>Curious and playfull.</b></p>
-				        <a href="#" class="btn adopt-btn">Adopt</a>
+				        <a href="#" class="btn adopt-btn" data-toggle="modal" data-target="#adopt-modal">Adopt</a>
 				      </div>
 				    </div>
 				  </div>
 				</div>
 			</div>
-			<div class="col-12" id="cont3">
-				<p>Submit your request to adopt</p>
-				<form>
-					<div class="row">
-   						<div class="col-6">
-							<input type="text" placeholder="First Name"  maxlength="30" required class="form-control form-control-sm">
+			
+			<!-- Modal -->
+			<div class="modal fade" id="adopt-modal" tabindex="-1">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Submit your request to adopt</h5>
+			        <button type="button" class="close" data-dismiss="modal">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+						<div class="row">
+	   						<div class="col-6">
+								<input type="text" placeholder="First Name"  maxlength="30" required class="form-control form-control-sm">
+							</div>
+							<div class="col-6">	
+								<input type="text" placeholder="Last Name"  maxlength="30" required class="form-control form-control-sm">
+							</div>
 						</div>
-						<div class="col-6">	
-							<input type="text" placeholder="Last Name"  maxlength="30" required class="form-control form-control-sm">
-						</div>
-					</div>
-					<input type="email" placeholder="E-mail" maxlength="40" required class="form-control form-control-sm">
-					<input type="tel" placeholder="Cell Phone (11-xxxx-xxxx)" class="form-control form-control-sm" pattern="[1]{2}-[0-9]{4}-[0-9]{4}">
-					<input type="submit" value="Submit" class="btn submit-btn">
-				</form>
+						<input type="email" placeholder="E-mail" maxlength="40" required class="form-control form-control-sm">
+						<input type="tel" placeholder="Cell Phone (11-xxxx-xxxx)" class="form-control form-control-sm" pattern="[1]{2}-[0-9]{4}-[0-9]{4}">
+						<input type="submit" value="Submit" class="btn submit-btn">
+					</form>
+			      </div>
+			    </div>
+			  </div>
 			</div>
+			<!-- FIN Modal -->
 		</section>
 		<footer class="row" id="footer">
 			<div class="col-12" id="footer1">
